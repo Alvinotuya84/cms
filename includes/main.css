@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Kaushan+Script&display=swap');
+* {
+	font-family: 'Permanent Marker', cursive;	margin:0px;
+	padding:0px;
+}
+*:focus {
+    outline: none !important;
+}
+body,html {
+	width:100%;
+	margin:auto;
+	/*background-image: url(../images/pexels-photo-669996.jpeg);*/
+    background: linear-gradient(-30deg, rgb(4, 75, 4),#350536, rgb(77, 65, 1), #550303);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 20% 50%;
+    }
+
+}
+li {
+	list-style:none;
+	margin:0px;
+}
+a {
+	text-decoration:none;
+}
+*:focus {
+	outline:1px solid #F4A460;
+}
+::-moz-selection { /* Code for Firefox */
+    color: white;
+	background:black;
+}
+
+::selection {
+    color: white;
+	background:white;
+}
+/* Login Form Design starts here. */
+.login-form li {
+	list-style:none;
+	margin:20px 0px;
+	margin-left:40px;
+}
+.login-box {
+	width:300px;
+	text-decoration-color: white !important;
+	height: 500px;
+	margin-top: 50px;
+	margin-left: 500px;
+	align-self: center;
+	/*border:2px solid #FFDEAD;*/
+	background:transparent;
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.64); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.64);
+border-radius: 4%;
+
+}
+.login-box label{
+	color: white;
+}
+.login-box h1 {
+	text-align:center;
+	color: white;
+
+}
+.submit_button_login{
+	width:200px;
+	color: white;
+	border-radius: 5em;
+	border: solid rgb(4, 99, 4);
+	background-color: rgb(4, 99, 4);
+	font-size: large;
+	padding: 3px;
+	cursor: pointer;
+	margin-left: 4%;
+	outline: none !important;;
+}
+.submit_button_login:hover{
+	opacity:.8;
+}
+label {
+	margin:5px 0px;
+	font-size:14px;
+}
+.label-block {
+	display:inline-block;
+	width:100px;
+}
+.input-box {
+	display:inline-block;
+	margin:5px 0px;
+	border-radius: 1%;
+	
+}
+.input-box input {
+	width:200px;
+	padding:5px 5px;
+	margin:auto;
+	background-color: transparent;
+	caret-color: white;
+	color: white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid white;
+
+
+}
+.input-box textarea {
+	width:200px;
+	height:75px;
+	padding:5px 5px;
+}
+.input-box select {
+	padding:5px 2px;
+	background-color: transparent;
+	width:200px;
+	color:green;
+	margin:auto;
+	outline:none;
+    border-left:none;
+	border-top:none;
+    border-right:none;
+	border-bottom: white 1px solid;
+
+}
+
+
+input::placeholder {
+	color: rgb(173, 173, 173);
+  }
+
+input:focus{
+	outline: none;
+}
+.submit_button_logout{
+	border-style: none;
+	color:rgb(161, 161, 161);
+	border:none;
+	padding:10px 20px;
+	font-weight: bolder;
+	background-color: transparent;
+	font-size: 16px;
+	outline:none;
+	
+}
+.submit_button_logout:hover,.submit_button_logout:focus {
+	cursor:pointer;
+	color:rgb(196, 195, 195);
+}
+.submit_button {
+	border:1px solid #F4A460;
+	border-radius: 2px;
+	font-size:16px;
+	font-weight: bolder;
+	margin-top:20px;
+	margin-right:20px;
+	padding:6px 10px;
+	background-color:#F4A460;
+	border:none;
+	color:black;
+}
+.submit_button:hover,.submit_button:focus {
+	cursor:pointer;
+	color:black;
+	background:white;
+}
+.error_message {
+	margin-left:5px;
+	color:black;
+}
+.confirm_message {
+	margin-left:5px;
+	color:green;
+}
+/* Login Form Design ends here. */
+
+
+
+/* Design Admin page starts here. */
+header {
+	background-color:transparent;
+	margin:0px auto;
+}
+
+nav {
+	padding: 10px;
+	text-align:center;
+	background-color:transparent;
+	/*border-bottom:2px solid #ccc;*/
+}
+nav a {
+	color:white;
+	display:inline-block;
+	padding:10px 20px;
+	font-weight: bolder;
+	outline: none;
+}
+nav a:hover {
+	/*ackground-color:#d88912;*/
+	color:#F4A460;
+	outline: none !important;
+}
+.table_mainWrapper {
+	width:1200px;
+	border-spacing:0px;
+}
+#td_aside {
+	margin-top: 54%;
+	float: left;
+	width:200px;
+	height: 100%;
+	position:static;
+	background-color: transparent;
+	border: 1px transparent solid;
+	border-radius: 2px;
+	
+	/*border-right:2px solid #ccc;*/
+}
+.accordion {
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 1px;
+	font-weight: bolder;
+  }
+  .active, .accordion:hover {
+	  background-color: #7a077c;
+	backdrop-filter: blur(10%);
+	opacity:0.5  }
+  .accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2212";
+  }
+  .panel {
+	padding: 0 18px;
+	background-color: transparent;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+aside a {
+	font-weight:bolder;
+	color:#F4A460 !important;
+	display:block;
+	padding:10px 20px;
+	outline:none !important;
+	border:none;
+}
+aside a:hover {
+	/*background-color:#d88912; /* #d6d6d6 */
+	color:rgb(196, 195, 195)  !important;
+}
+#td_section {
+	vertical-align:top;
+}
+.userInfoBar {
+	width:1000px;
+	background-color:#f4f4f4;
+}
+section {
+
+	width:100%;
+	padding:30px;
+	margin-right: 0%;
+	padding-bottom:40px;
+	border-radius: 2px;
+	background-color: transparent;
+}
+section h1 {
+	margin-bottom:10px;
+	font-weight:normal;
+	color:rgb(196, 195, 195);
+	font-size: 26px;
+}
+section h2 {
+	
+	
+	color:white!important;
+}
+section p {
+	width:800px;
+	line-height: 25px;
+}
+article {
+	margin-top:20px;
+	margin-bottom:50px;
+}
+article h2 {
+	margin-bottom:5px;
+	font-weight:normal;
+	color:#333;
+	font-size: 20px;
+}
+table {
+	border-collapse: collapse;
+}
+table  a{
+	font-weight: bolder;
+	color: #F4A460;
+}
+.table_displayData td, .table_displayData th {
+	padding: 8px 10px;
+	text-align: left;
+	color: white;
+}
+.table_displayData th {
+	background-color:transparent;
+	color:white;
+}
+.table_invoiceFormat th {
+	background-color:transparent;
+	color:green;
+	padding: 7px 25px;
+}
+.table_invoiceFormat tr {
+	border:none;
+}
+.table_invoiceFormat td,.table_invoiceFormat tr {
+	padding: 5px 25px;
+	text-align: left;
+}
+.table_infoFormat {
+	margin:20px 5px 25px;
+}
+.table_infoFormat  td {
+	padding:5px 5px 0px 0px;
+}
+.table_infoFormat  td:first-child {
+	font-weight:bold;
+}
+table img{
+	height: 20px;
+}
+footer {
+	clear:both;
+	padding:20px;
+	opacity: 1;
+	background-color:transparent; /* #009688 */
+	color:rgb(68, 65, 65);
+	text-align:center;
+
+	left: 0;
+	bottom: 0;
+	margin-bottom: 0;
+	/*border-top: 2px solid #ccc;*/
+}
+/* Design of Admin page ends here. */
+footer p{
+	color:rgb(196, 195, 195);
+}
